@@ -1,5 +1,5 @@
 .container {
-
+    margin: 0 auto;
 }
 
 .row {
@@ -11,21 +11,30 @@
     border-radius: 10px;
     width: 500px;
     height: 750px;
+    z-index: 2;
     
 }
 .main {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    margin-left: 500px;
+    margin-left: 100px;
+    
 }
 .phone {
     background-color:white;
+    padding: 20px;
+}
+.phoneInterior {
+    background-color: lightgray;
+    border-radius: 10px;
 }
 .phoneHeader {
     background-color: purple;
     color: white;
     border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .earPiece {
     background-color: white;
@@ -36,3 +45,33 @@
     width: 50%;
     margin-left: 25%;
 }   
+.received {
+    background-color: lightpink;
+    color: palevioletred;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 300px;
+}
+.messages {
+    flex-flow: column;
+
+}
+.sent {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.description {
+    margin-left: 10%;
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+}
